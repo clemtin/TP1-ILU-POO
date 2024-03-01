@@ -39,8 +39,12 @@ public class Druide {
 		return forcePotion;
 	}
 
-	private void nextInt(int effetPotionMax2) {
-		// TODO Auto-generated method stub
+	public void booster(Gaulois gaulois) {
+		if (gaulois.getnom().equals("Obelix")) {
+			parler("Non, Obélix !... Tu n’auras pas de potion magique !");
+		} else {
+			gaulois.boirePotion(forcePotion);
+		}
 
 	}
 
@@ -49,5 +53,4 @@ public class Druide {
 		panoramix.preparerPotion();
 
 	}
-
 }
